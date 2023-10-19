@@ -12,8 +12,7 @@ app.get('/api/v1/search/:movie', async (req, res) => {
   const omdb_api = `${omdb_url}`;
 
   const movieName = req.params.movie;
-  try {                                         //i=tt3896198&apikey=3644891e
-                                                //i=tt3896198&apikey=3644891e
+  try {
     const { data, status } = await axios.get(omdb_api, {
       headers: {
         Accept: 'application/json'
