@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="C:\Users\AmaralKa\moovie\filmes\movie-api\tests\unit\application\movie\entity\movie.spec.ts">
+    <testCase name="Movie CreateMovieEntityInstance" duration="5"/>
+    <testCase name="Movie TestFailIfMovieTitleIsNull" duration="1"/>
+  </file>
+</testExecutions>

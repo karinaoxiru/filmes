@@ -1,0 +1,6 @@
+projectKey=moovie
+serverUrl=http://ec2-18-229-255-211.sa-east-1.compute.amazonaws.com:9000
+serverVersion=10.3.0.82913
+dashboardUrl=http://ec2-18-229-255-211.sa-east-1.compute.amazonaws.com:9000/dashboard?id=moovie
+ceTaskId=AYxK3k72O8gpzHpnBF-M
+ceTaskUrl=http://ec2-18-229-255-211.sa-east-1.compute.amazonaws.com:9000/api/ce/task?id=AYxK3k72O8gpzHpnBF-M

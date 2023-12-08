@@ -1,14 +1,14 @@
 {
   "name": "movie-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "ultima tentativa",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage --testResultsProcessor jest-sonar-reporter",
     "build": "npx tsc -p tsconfig.json",
     "dev": "npx nodemon src/index.ts"
   },
-  "author": "",
+  "author": "grupo1",
   "license": "ISC",
   "devDependencies": {
     "@types/axios": "^0.14.0",
@@ -22,13 +22,33 @@
     "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.7.0",
+    
+    "jest-sonar-reporter": "^2.0.0",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "tests/**/*.ts"
+    ],
+    "coverageReporters": ["json", "lcov", "text", "clover"],
+    "coverageDirectory": "coverage"
   },
   "dependencies": {
     "axios": "^1.5.1",
     "dotenv": "^16.3.1",
     "express": "^4.18.2"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [
+    "moovie"
+  ]
 }
+
